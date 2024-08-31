@@ -1,0 +1,77 @@
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game-board {
+    display: grid;
+    grid-template-rows: repeat(10, 30px); /* 10 rows with a height of 30px each */
+    gap: 1px;
+    background-color: #333;
+    padding: 5px;
+    border: 2px solid #000;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* 10 columns with a width of 30px each */
+    gap: 1px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    border: 1px solid #333;
+  }
+  
+  .cell.filled {
+    background-color: #0f9;
+    border-color: #0c6;
+  }
+  
+  .cell.locked {
+    background-color: #f06;
+    border-color: #c04;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    border:1px solid #000;
+    background-color: #ededed;
+  }
+  button:hover {
+    background-color: #fff;
+}
+  .start-button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #000;
+    border: none;
+    color: white;
+  }
+  
+  .start-button:hover {
+    background-color: #cfb991;
+    color: #000;
+  }
+  .score,.game-over{
+    font-size: 20px;
+    margin: 10px;
+  }
