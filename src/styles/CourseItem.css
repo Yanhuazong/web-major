@@ -1,0 +1,17 @@
+/* CourseItem.css */
+.course-item {
+  padding: 8px 10px;
+  margin: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: grab;
+  transition: background-color 0.2s ease;
+  text-align:left;
+  font-size:14px;
+  font-weight:500;
+}
+
+.course-item:hover {
+  background-color: #e9e9e9;
+}

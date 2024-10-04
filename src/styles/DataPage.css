@@ -1,0 +1,45 @@
+.data-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+
+}
+.flex-container.intern-graph-container{
+  margin-top: -80px;;
+}
+.column{
+  width:47%;
+}
+.employment-chart-container, .intern-histogram-container, .intern-piechart-container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+ul.top-employers-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.top-employers-list li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.employment-chart-container svg, .intern-histogram-container svg, .intern-piechart-container svg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .flex-container{
+    flex-direction: column;
+  }
+  .column{
+    width: 100%;
+  }
+}

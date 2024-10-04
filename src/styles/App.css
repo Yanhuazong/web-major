@@ -1,1 +1,62 @@
-@import "./GameBoard.css";
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .App {
+    padding: 0;
+    height: 100%;
+  }
+  .content {
+    margin-left: 60px; /* Adjust to match the collapsed width of the sidebar */
+    padding: 0;
+    transition: margin-left 0.3s ease;
+    height:100%
+  }
+  
+  .sidebar:hover ~ .content {
+    margin-left: 250px; /* Adjust margin when sidebar expands */
+  }
+h1{
+    font-size:2.8em !important;
+    text-align:center;
+  }
+  /* Mobile View: Adjust content padding when the sidebar is at the top */
+@media screen and (max-width: 768px) {
+    .App {
+      display: block;
+    }
+  
+    .content {
+      margin-left: 0; /* No margin on mobile since the sidebar is at the top */
+      padding-top: 60px; /* Add padding for the top navigation bar */
+    }
+    .sidebar:hover ~ .content {
+        margin-left: 0;
+      }
+      h1{
+        font-size:2em !important;
+      }
+  }
+
+  @keyframes fadeInSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-headline {
+    animation: fadeInSlideIn 1.5s ease-in-out;
+    opacity: 1;
+  }

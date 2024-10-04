@@ -1,0 +1,36 @@
+/* CategoryDropZone.css */
+.category-dropzone {
+  padding: 20px;
+  border: 2px solid #8e6f3e;
+  border-radius: 10px;
+  min-height: 200px;
+  background-color: #fff;
+  text-align: center;
+  width:28%;
+  min-height:250px;
+  box-sizing: border-box;
+}
+
+.category-dropzone h3 {
+  color: #000;
+  font-size: 24px;
+}
+.category-dropzone h3 svg{
+  color: #8e6f3e;
+  font-size: 30px;
+  margin-right:10px;
+}
+.dropped-course {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background-color: #cfb991;
+  border-radius: 5px;
+  color: #000;
+font-size:14px;
+}
+@media screen and (max-width: 768px) {
+  .category-dropzone {
+    margin-bottom: 20px;
+    width:100%;
+  }
+}

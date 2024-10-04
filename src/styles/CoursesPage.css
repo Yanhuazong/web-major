@@ -1,0 +1,34 @@
+.courses-page {
+  text-align: center;
+  padding: 40px 20px;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  height:100%;
+}
+
+.dropzones {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px;
+  box-sizing: border-box;
+}
+
+.courses-container{
+  display: flex;
+  justify-content: center;
+padding-bottom: 50px;
+}
+.course-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width:1200px;
+}
+
+@media screen and (max-width: 768px) {
+  .dropzones {
+   flex-direction:column;
+   margin: 20px 0;
+  }
+}
