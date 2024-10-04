@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <header className="page-header">
-        <img src="../../../imgs/Polytech_H-Full-RGB.svg" alt="Logo" className="logo" />
+        <img src="/Polytech_H-Full-RGB.svg" alt="Logo" className="logo" />
       </header>
       <ul>
         <li>
